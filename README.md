@@ -1,7 +1,10 @@
-#Imaginary Website for a Company HippeChick Noms
+# Imaginary Website for a Company HippeChick Noms
 
 Nothing really special about this design, just basic HTML and CSS
 
 A preview of this website and screenshot can be seen below
 
-[ScreenShot](screenshot.png)
+
+[](./screenshot.png)
+
+[Click Here to see The Website Preview](https://agbortoko.github.io/HippieChick-Noms-website/)
