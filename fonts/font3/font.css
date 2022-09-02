@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'BeautyDemo';
+	src: url('./BeautyDemo.eot');
+	src: local('BeautyDemo'), url('./BeautyDemo.woff') format('woff'), url('./BeautyDemo.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_79517">Text with this font applied</p> */
+.fontsforweb_fontid_79517 {
+	font-family: 'BeautyDemo' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

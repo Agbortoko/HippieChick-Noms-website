@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: "Grafiti";
+    font-style: normal;
+    font-weight: bolder;
+    src: url("../fonts/font2/AmaticSC-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Techno";
+    font-style: normal;
+    src: url("../fonts/font3/BeautyDemo.woff");
+}
+
+
+
+:root{
+    --clr-text: #3d3d3d;
+    --clr-primary: #067e0a;
+    --clr-primary-dark: #125814;
+    --clr-accent: #613b6b;
+    --clr-accent-dark: #44264d;
+
+    --ff-title: "Grafiti",sans-serif;
+    --ff-serif: serif;
+    --ff-button: sans-serif;
+    --ff-logo: "Techno",sans-serif ;
+}
+
+*{box-sizing: border-box;}
+*::before, *::after{box-sizing: inherit;}
+
+html{
+    box-sizing: border-box;
+    font-family: serif;
+    color: var(--clr-text);
+    font-size: 1.125rem;
+}
+
+body{
+    margin:0;
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+/* Typography */
+h1,h2,h3,h4,p{
+    margin: 0;
+}
+
+h2 , h3{
+    font-family: var(--ff-title);
+    line-height: 0.9;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p{
+    margin-bottom: 0.85em;
+}
+
+p:last-child{
+    margin-bottom: 0;
+}
+.section-title-small{
+    font-size: 3rem;
+}
+
+.section-title-small small {
+    font-size: 0.6em;
+   display: block;
+}
+
+.text-primary{
+    color: var(--clr-primary);
+}
+
+.logo{
+    font-family: var(--ff-logo);
+    text-align: center;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+/* navigation */
+
+header{
+    padding: 1em 0 2em;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5em;
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+    color: var(--clr-accent);
+    text-decoration: underline;
+}
+/* buttons */
+.btn-group{
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 0.5em;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.btn{
+    padding: .75em 2.5em;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.7em;
+    border-radius: 0.35em;
+    font-family: var(--ff-button);
+}
+
+
+.btn-primary {
+    background: var(--clr-primary);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background: var(--clr-primary-dark);
+}
+
+.btn-accent {
+    background: var(--clr-accent);
+}
+.btn-accent:hover,
+.btn-accent:focus {
+    background: var(--clr-accent-dark);
+}
+
+
+/* Homepage styles */
+
+.hero {
+    background-color: #555;
+    background-image: url("../images/bg.jpeg");
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 15vh 1em;
+}
+
+
+
+.about-us {
+    background: var(--clr-accent);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0;
+}
+
+.about-us__intro{
+    background-color: var(--clr-accent);
+    background-image:url("../images/bg2.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding: 3em 1em 1.5em;
+    overflow: hidden;
+}
+
+.about-us__body{
+    padding: 1.5em 1em 3em;
+}
+
+.order-online {
+    background: #f0f0f0;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.product {
+    padding: 1em;
+    border-radius: 0.35em;
+    overflow: hidden;
+    box-shadow:0 0 1em 2px rgba(0,0,0,0.2);
+    margin-top: 0.5em;
+}
+
+.product:last-of-type{
+    margin-bottom: 2em;
+}
+
+.product__img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.product__content{
+    padding: 1em;
+}
+.product__title{
+    margin-bottom: 0.5em;
+    color: var(--clr-primary);
+    font-size: 2.5rem;
+}
+
+.product__content>p{
+    margin-top: 0.75em;
+}
+
+.fine-print{
+    font-size: 0.75rem;
+    color: rgba(0,0,0,0.85);
+}
+
+
+footer{
+    background: var(--clr-accent-dark);
+}
+
+footer .container{
+    padding: 3em 1em;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3em;
+}
+footer a {color: inherit;}
+
+
+.footer-nav , 
+.footer-social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav a{
+    padding: 0.75em;
+    text-decoration: none;
+}
+
+.footer-nav a:hover{
+    text-decoration: underline;
+}
+
+.social-link {
+   display: inline-block;
+   padding: 0.35em;
+ 
+}
+
+.social-icon{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+/* Responsive break points */
+
+@media only screen and (min-width: 750px){
+
+    .container
+    {
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+
+    nav ul{
+        justify-content: space-evenly;
+    }
+
+    section{
+        padding: 6em 1em;
+    }
+
+    .logo {
+        font-size: 3em;
+    }
+
+    .btn-group{
+        margin-top: 1em;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .btn + .btn{
+        margin-left: 0.5em;
+    }
+
+    .about-us{
+        flex-direction: row;
+    }
+
+    .about-us__intro,
+    .about-us__body {
+        flex: 0 1 50%;
+        flex-direction: column;
+        padding: 4em 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .about-us__intro{
+        text-align: right;
+    }
+
+    .about-us__intro > * {
+        max-width:27rem;
+        margin-left: auto;
+    }
+
+    .about-us__body{
+        text-align: left;
+    }
+
+    .about-us__body > * {
+        max-width:27rem;
+        margin-right: auto;
+    }
+
+    .order-online > *{
+        max-width: 65ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .products{
+        flex-direction: row;
+        max-width: 1200px;
+    }
+
+    .product{
+        margin: 0;
+        flex: 0 1 33%;
+    }
+
+    .product + .product{
+        margin-left: 1em;
+    }
+
+    .product:last-of-type{
+        margin-bottom: 0;
+    }
+
+    footer .container{
+        justify-content: space-between;
+    }
+
+
+    .footer-nav,
+    .footer-social{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+}

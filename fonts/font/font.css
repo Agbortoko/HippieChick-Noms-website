@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'COMIZ';
+	src: url('./COMIZ.eot');
+	src: local('COMIZ'), url('./COMIZ.woff') format('woff'), url('./COMIZ.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_205">Text with this font applied</p> */
+.fontsforweb_fontid_205 {
+	font-family: 'COMIZ' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
