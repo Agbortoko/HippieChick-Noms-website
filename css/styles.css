@@ -167,7 +167,7 @@ nav a:hover, nav a:focus {
 
 /* Homepage styles */
 
-.hero {
+.hero{
     background-color: #555;
     background-image: url("../images/bg.jpeg");
     background-blend-mode: multiply;
@@ -179,8 +179,13 @@ nav a:hover, nav a:focus {
 }
 
 
+.about-us{
+    background: var(--clr-accent);
+    padding: 0;
+}
 
-.about-us {
+
+.about-us .container {
     background: var(--clr-accent);
     display: flex;
     flex-direction: column;
@@ -322,7 +327,7 @@ footer a {color: inherit;}
         margin-left: 0.5em;
     }
 
-    .about-us{
+    .about-us .container{
         flex-direction: row;
     }
 
